@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .img-container {
+            width: 25%;
+            /* height: 100px; */
+            border: 2px solid orangered;
+        }
+
+        .img-container>img {
+            width: 100%;
+            /* height: 100%; */
+            display: block;
+        }
+
+        figure {
+            width: 25%;
+        }
+
+        figure>img {
+            display: block;
+            width: 100%;
+        }
+
+        /* 
+        figcaption{
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="img-container">
+        <img src="../images/stars.jpg" alt="starry nightsky">
+    </div>
+
+    <picture>
+        <source srcset="../images/bg_eule.jpg" media="(max-width: 600px)">
+        <source srcset="../images/canyon.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/australian-shepherd.jpg" media="(max-width: 1200px)">
+        <img src="../images/autumn1.jpg" alt="">
+    </picture>
+
+
+    <picture>
+        <source srcset="../images/grasshouse_small.jpg" media="(max-width: 600px)">
+        <source srcset="../images/grasshouse_medium.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/grasshouse_big.jpg" media="(max-width: 1200px)">
+        <img src="../images/grasshouse.jpg" alt="">
+    </picture>
+
+
+
+    <!-- 
+    <picture>
+        <source srcset="../images/grasshouse_big.jpg" media="(min-width: 1200px)">
+        <source srcset="../images/grasshouse_medium.jpg" media="(min-width: 1000px)">
+        <source srcset="../images/grasshouse_small.jpg" media="(min-width: 300px)">
+        <img src="../images/grasshouse.jpg" alt="">
+    </picture>
+ -->
+
+    <figure>
+        <img src="../images/lake.jpg" alt="lake">
+        <figcaption>Wunderschöner See</figcaption>
+    </figure>
+
+
+    <figure>
+        <picture>
+            <source srcset="../images/grasshouse_small.jpg" media="(max-width: 600px)">
+            <source srcset="../images/grasshouse_medium.jpg" media="(max-width: 1000px)">
+            <source srcset="../images/grasshouse_big.jpg" media="(max-width: 1200px)">
+            <img src="../images/grasshouse.jpg" alt="">
+            <figcaption>Haus mit Grasdach</figcaption>
+        </picture>
+    </figure>
+</body>
+
+</html>

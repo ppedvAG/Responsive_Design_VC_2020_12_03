@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline vs Blockelemente</title>
+    <style>
+        body {
+            margin: 0;
+            padding-bottom: 200px;
+        }
+
+        span {
+            color: gold;
+        }
+
+        .lbl-inp-container {
+            margin-bottom: 5px;
+        }
+
+        .demo01 {
+            display: inline;
+            width: 100px;
+            /* funktioniert NICHT bei Inline-Elementen */
+            background-color: rgb(162, 255, 255);
+        }
+
+        .demo02 {
+            display: block;
+            width: 100px;
+            background-color: rgb(162, 255, 255);
+        }
+
+
+        .demo03 {
+            display: inline-block;
+            width: 100px;
+            /* background-color: rgb(162, 255, 255); */
+        }
+
+        .img-container{
+            border: 2px solid green;
+        }
+
+        .img-container>img{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- lorem100 + Enter = Dummytext mit 100 Wörtern -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio in omnis inventore? Aperiam,
+        dignissimos voluptate nam voluptatem tempore vitae quaerat sed perferendis quas iure aut atque quos repudiandae
+        commodi fugiat ea pariatur nesciunt, sint, reprehenderit dolorem vero. Provident optio assumenda mollitia quidem
+        cumque velit enim <span>sequi quam dolor illo debitis</span> consequatur modi voluptatem, unde ea fugiat eum
+        rerum, quisquam
+        corporis fugit iste recusandae, ab eveniet animi? Corrupti ut suscipit omnis dolores. Molestiae error
+        reprehenderit totam corrupti repellendus sapiente necessitatibus adipisci, voluptates culpa quisquam expedita ab
+        cumque tenetur alias laboriosam odio iusto distinctio illo aperiam accusamus ex asperiores saepe. Perferendis.
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis explicabo ex alias at provident corporis
+        <span> molestiae sunt ratione esse.</span></p>
+    <p>
+        <a href="#">Lorem,</a> ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus iusto vitae quae
+        ratione autem non
+        distinctio. Dolorum temporibus voluptate soluta quas perferendis consectetur vitae aut minima ipsum numquam
+        necessitatibus, error, est consequuntur tenetur? Eaque enim voluptatum numquam, velit iusto itaque recusandae
+        quae consequatur inventore laborum commodi accusamus illum aliquid voluptate dolores vitae aut. Beatae, quos
+        aperiam magnam eos nostrum unde eum eius nisi sequi aspernatur praesentium cumque quis nesciunt dolor corporis
+        eveniet aliquam omnis, modi deserunt. Voluptate in sunt vero. Eos, laudantium alias dolor, velit, ad iusto
+        fugiat nesciunt voluptates deserunt beatae ducimus. Tempora rem minima nulla necessitatibus beatae.
+    </p>
+    <h1>Überschrift h1</h1>
+    <ul>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+    </ul>
+
+    <h1>inline-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="demo01">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="demo01">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <h1>block-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="demo02">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="demo02">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <h1>inline-block-Demo</h1>
+    <div class="lbl-inp-container">
+        <label for="" class="demo03">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="demo03">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <img src="../images/australian-shepherd.jpg" alt="australian shepherd">
+    <img src="../images/australian-shepherd.jpg" alt="australian shepherd">
+
+    <div class="img-container">
+        <img src="../images/autumn2_small.jpg" alt="autumn landscape">
+    </div>
+    <div class="img-container">
+        <img src="../images/australian-shepherd.jpg" alt="australian shepherd">
+    </div>
+</body>
+
+</html>

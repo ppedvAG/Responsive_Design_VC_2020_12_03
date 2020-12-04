@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+}
+
+.demo {
+    height: 100vh;
+    background-color: lightseagreen;
+}
+
+
+.demo-list{
+    display: none;
+}
+
+.demo-table{
+    border-collapse: collapse;
+}
+
+.demo-table th, .demo-table td{
+    border: 1px solid black;
+    padding: .5em 2em;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .demo {
+        background-color: gold;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .demo {
+        background-color: lime;
+    }
+
+    .demo-list{
+        display: block;
+    }
+
+    .demo-table{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .demo {
+        background-color: purple;
+    }
+
+}

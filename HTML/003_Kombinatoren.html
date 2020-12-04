@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatoren</title>
+    <style>
+        /* Nachfahren-Kombinatoren (descendant selectors) */
+        div p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div span {
+            color: gold;
+        }
+
+        /* Kind-Kombinatoren (child selector) */
+        div>p {
+            font-size: 24px;
+        }
+
+        div>span {
+            text-decoration: underline;
+        }
+
+
+        /* Geschwisterkombinatoren (sibling selector) */
+        /* Allgemeiner Geschwisterkombinator */
+        h1~p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        /* Benachbarter G. */
+        h1+p{
+            font-size: 10px;
+        }
+
+        .demo{
+            height: 50px;
+            width: 50px;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Das ist eine Überschrift</h1>
+    <p>Das ist ein P nach einer h1 Überschrift.</p>
+
+    <!-- div>p{Text}*Anzahl p + Enter (oder Tab) -->
+    <div>
+        <h2>Das ist eine h2 Überschrift in einem Div</h2>
+        <p>Das ist ein P nach einer h2 Überschrift.</p>
+        <span>Das ist eine Span in einem Div.</span>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph <span>Das ist eine Span in einem P.</span> </p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <p>Das ist ein Paragraph in einem Div.</p>
+        <div>
+            <p>Das ist auch ein P.</p>
+        </div>
+    </div>
+
+
+    <h1>Das ist eine Überschrift</h1>
+    <p>Das ist ein P nach einer h1 Überschrift.</p>
+    <p>P außerhalb von Div.</p>
+    <p>P außerhalb von Div.</p>
+    <div class="demo"></div>
+    <p>P außerhalb von Div.</p>
+    <p>P außerhalb von Div.</p>
+    <p>P außerhalb von Div.</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodell</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* background-color: lightseagreen; */
+            font-size: 44px;
+            color: white;
+        }
+
+        .demo01{
+            background-color: lightseagreen;
+        }
+        .demo02{
+            background-color: rgb(116, 228, 222);
+            padding: 50px;
+        }
+        .demo03{
+            background-color: rgb(153, 212, 209);
+            padding: 50px;
+            border: 10px solid rgb(10, 88, 85);
+        }
+        .demo04{
+            background-color: rgb(219, 255, 253);
+        }
+        .demo05{
+            background-color: rgb(102, 168, 165);
+            padding: 50px;
+            border: 10px solid rgb(10, 88, 85);
+            box-sizing: border-box;
+        }
+        .demo06{
+            background-color: rgb(42, 134, 130);
+            padding: 50px;
+            border: 10px solid rgb(10, 88, 85);
+        }
+
+        .inner01{
+            width: 200px;
+            height: 100px;
+            background-color: chartreuse;
+            
+        }
+        .demo07{
+            background-color: rgb(10, 88, 85);
+            padding: 50px;
+            border: 10px solid rgb(10, 88, 85);
+            box-sizing: border-box;
+        }
+
+        .demo08{
+            background-color: rgb(25, 173, 168);
+            padding: 5px 0 50px 20px;
+            box-sizing: border-box;
+        }
+
+        .demo09{
+            background-color: rgb(107, 228, 224);
+            padding: 5px 0 50px 20px;
+            box-sizing: border-box;
+        }
+
+        .inner02{
+            height: 100%;
+            width: 100%;
+            background-color: orangered;
+        }
+        .demo10{
+            background-color: rgb(50, 194, 189);
+        }
+        .demo11{
+            background-color: rgb(27, 136, 132);
+            margin-bottom: 50px;
+        }
+        .demo12{
+            background-color: rgb(2, 71, 69);
+            margin-top: 70px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="demo01">01</div>
+    <div class="demo02">02</div>
+    <div class="demo03">03</div>
+    <div class="demo04">04</div>
+    <div class="demo05">05</div>
+    <div class="demo06">
+        <div class="inner01"></div>
+    </div>
+    <div class="demo07">
+        <div class="inner01"></div>
+    </div>
+    <div class="demo08">08</div>
+    <div class="demo09">
+        <div class="inner02"></div>
+    </div>
+    <div class="demo10">10</div>
+    <div class="demo11">11</div>
+    <div class="demo12">12</div>
+</body>
+</html>

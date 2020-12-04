@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-Demo</title>
+    <style>
+        /* Das 7. p auswählen: */
+        /* 
+        p:nth-child(7){
+            color: greenyellow;
+        }
+ */
+        /* jedes 3. p auswählen: */
+        /* 
+        p:nth-child(3n){
+            color: cornflowerblue;
+        } */
+
+        /* jedes 3. p, aber beginnend beim 1. *//* 
+        p:nth-child(3n+1){
+            color: darkorange;
+        }*/
+
+
+        /* alle ungeraden */
+        p:nth-child(odd){
+            color: olivedrab;
+            text-decoration: underline;
+        }
+        /* alle geraden */
+        p:nth-child(even){
+            color: rgb(206, 235, 148);
+        }
+
+        p:nth-of-type(odd){
+            font-style: italic;
+        }
+
+        .demo{
+            height: 50px;
+            width: 50px;
+            background-color: orangered;
+        }
+
+    </style> 
+
+</head>
+
+<body>
+    <!-- p{Text $}* Anzahl + Enter -->
+    <p>Das ist der 1. Paragraph.</p>
+    <p>Das ist der 2. Paragraph.</p>
+    <p>Das ist der 3. Paragraph.</p>
+    <div class="demo"></div>
+    <p>Das ist der 4. Paragraph.</p>
+    <p>Das ist der 5. Paragraph.</p>
+    <p>Das ist der 6. Paragraph.</p>
+    <p>Das ist der 7. Paragraph.</p>
+    <p>Das ist der 8. Paragraph.</p>
+    <p>Das ist der 9. Paragraph.</p>
+
+</body>
+
+</html>

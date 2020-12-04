@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektoren</title>
+    <style>
+        /* Universalselektor */
+        * {
+            /*  
+                margin: 0;
+                padding: 0;
+            */
+        }
+
+        /* Typselektor */
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Klassenselektor */
+        .demo-p {
+            color: aqua;
+        }
+
+        /* ID-Selektor */
+        #demo-id-1 {
+            font-style: italic;
+        }
+
+        #demo-id-2 {
+            color: green;
+        }
+
+
+        /* ********************************************** */
+
+        div>p {
+            /* ... */
+        }
+
+
+        /* Attributselektoren */
+
+        /* alle Links, die ein Target-Attribut haben */
+        a[target] {
+            text-decoration: none;
+        }
+
+        /* Attribut muss einen bestimmten Wert haben */
+        a[target="_blank"] {
+            text-decoration: none;
+        }
+
+        /* Wert muss mit einer bestimmten Zeichenfolge beginnen */
+        div[class^="demo"] {
+            height: 100px;
+            background-color: azure;
+            border: 1px solid rgb(21, 216, 216);
+        }
+
+        /* Wert muss mit einer bestimmten Zeichenfolge (oder Zeichen) enden */
+        p[class$="p"] {
+            text-decoration: underline;
+        }
+
+        /* Wert muss eine bestimmte Zeichenfolge enthalten */
+        div[class*="em"] {
+            color: rgb(21, 216, 216);
+        }
+
+
+        /* Pseudoklassen und Pseudoelemente */
+
+        /* LoVe/HAte Eselsbrücke:  link - visited - hover - active */
+        a:link {
+            color: rgb(0, 63, 63);
+        }
+
+        a:visited {
+            color: firebrick;
+        }
+
+        a:hover {
+            color: rgb(21, 216, 216);
+        }
+
+        a:active {
+            color: gold;
+        }
+
+
+        div::before {}
+    </style>
+</head>
+
+<body>
+
+    <!-- emmet abbreviation -->
+    <!-- p{Text}*Anzahl + Enter (oder Tab) -->
+
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p class="demo-p">Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p class="demo-p">Das ist ein Paragraph.</p>
+    <p id="demo-id-2" class="demo-p">Das ist ein Paragraph.</p>
+    <p id="demo-id-1">Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+
+    <div class="demo-01">
+        <p>Das ist ein <a href="https://en.wikipedia.org/wiki/Paragraph" target="_blank">Paragraph</a> in einem div</p>
+    </div>
+
+    <div class="demo-02">Text</div>
+
+    <ul>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+    </ul>
+
+    <!-- 
+    <script>
+
+        document.getElementById('demo-id-1');
+
+        document.getElementsByClassName('demo-p');
+    </script>
+ -->
+
+</body>
+
+</html>

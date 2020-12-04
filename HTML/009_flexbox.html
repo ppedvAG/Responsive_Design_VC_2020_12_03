@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        :root {
+            font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .flex-container {
+            background-color: cadetblue;
+            display: flex;
+            flex-wrap: wrap;
+            /* horizontale Ausrichtung: */
+            justify-content: space-around;
+            /* vertikale Ausrichtung: */
+            /* align-items: center; */
+            /* height: 100vh; */
+            /* flex-direction: row; */
+        }
+
+        .flex-item {
+            /* height: 200px; */
+            width: 30%;
+            /* margin: 1em; */
+            background-color: rgb(59, 217, 223);
+            border: 2px solid rgb(2, 82, 85);
+            color: darkblue;
+            font-size: 24px;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex-container">
+        <div class="flex-item">01</div>
+        <div class="flex-item">02</div>
+        <div class="flex-item">03</div>
+        <div class="flex-item">04</div>
+        <div class="flex-item">05</div>
+        <div class="flex-item">06</div>
+        <div class="flex-item">07</div>
+        <div class="flex-item">08</div>
+        <div class="flex-item">09</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, voluptatibus labore voluptas aspernatur
+            molestias modi numquam fuga rem et assumenda nihil doloribus commodi aut error dignissimos porro molestiae!
+            Natus fugit, voluptates accusamus voluptate expedita excepturi inventore ducimus ut minus, magnam distinctio
+            necessitatibus sunt aspernatur sit recusandae provident est esse quaerat perferendis debitis. Tempore eius
+            et sunt dignissimos voluptatum atque pariatur eaque! Saepe, deleniti ex? Repellendus temporibus nihil
+            blanditiis ipsa iusto quidem reprehenderit aspernatur natus accusantium illum commodi tenetur at, ut aliquam
+            nemo perspiciatis amet hic alias dolor. Aperiam modi necessitatibus, nemo qui optio exercitationem dicta
+            illo corporis? Laboriosam, nostrum vero?
+        </div>
+        <div class="flex-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aliquid quia veritatis reprehenderit
+            aspernatur, dolores error minima perspiciatis accusamus odio delectus ullam, nam cupiditate voluptate quo
+            suscipit, ipsum et nesciunt veniam recusandae. Dicta impedit nemo, soluta unde culpa error cumque eligendi
+            repellat eveniet aliquid! Laborum nostrum quo voluptatum, explicabo commodi distinctio eligendi quibusdam,
+            ducimus omnis aperiam quia? Facilis reprehenderit nulla ducimus autem iure. Minus amet porro harum
+            voluptatem obcaecati! Perferendis, iure, illum maxime vel atque error molestiae ex consequuntur qui veniam
+            sunt a corrupti quae recusandae eius facere quisquam fugit incidunt nam tempore asperiores. Repudiandae id
+            non laboriosam laudantium earum?
+        </div>
+        <div class="flex-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, placeat consequuntur vel dignissimos
+            similique numquam accusantium voluptatem qui corrupti facilis vitae cupiditate deserunt unde amet soluta
+            fugiat voluptate, ducimus doloribus!
+        </div>
+    </div>
+</body>
+
+</html>
